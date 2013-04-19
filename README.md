@@ -21,7 +21,7 @@ Set up Android device:
       
     - IP:   your Windows machine running WAMP server and WhatSNiff
     - Host: v.whatsapp.net
-  - Copy android/server.crt to the root of your SD card
+  - Copy apache/server.crt to the root of your SD card
   - Go to Settings->Security->Install Certificates and install it.
   - BACK UP YOUR WHATSAPP CONVERSATIONS!
   - Clear WhatsApp application data
