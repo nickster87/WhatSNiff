@@ -19,18 +19,18 @@ Set up Android device:
   - Install the app Hosts Editor http://play.google.com/store/apps/details?id=com.treb.hosts
   - Add a new hosts entry:
       
-      IP:   your Windows machine running WAMP server and WhatSNiff
-      Host: v.whatsapp.net
+    - IP:   your Windows machine running WAMP server and WhatSNiff
+    - Host: v.whatsapp.net
   - Copy android/server.crt to the root of your SD card
   - Go to Settings->Security->Install Certificates and install it.
   - BACK UP YOUR WHATSAPP CONVERSATIONS!
   - Clear WhatsApp application data
   
 Using WhatSNiff:
-  Just make sure your phone is on the same subnet as your Windows machine.
-  Open WhatsApp on your phone, enter your number and finish the setup.
-  Your password will show up in c:/wamp/www/whatsapp/v2/exist.log
+  - Just make sure your phone is on the same subnet as your Windows machine.
+  - Open WhatsApp on your phone, enter your number and finish the setup.
+  - Your password will show up in c:/wamp/www/whatsapp/v2/exist.log
   
 TODO:
-  Check compatibility with other platforms (e.g. OS X, Linux, iOS, Windows Phone 7.5)
-  Test the instructions above to see if I forgot anything, it's 03:30 AM ok..? :(
+  - Check compatibility with other platforms (e.g. OS X, Linux, iOS, Windows Phone 7.5)
+  - Test the instructions above to see if I forgot anything, it's 03:30 AM ok..? :(
