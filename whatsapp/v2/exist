@@ -18,6 +18,6 @@ $response = curl_exec($ch);
 // Close the connection.
 curl_close($ch);
 
-file_put_contents("exist.log", $response, FILE_APPEND);
+file_put_contents("exist.log", "REQUEST: $url\nRESPONSE: " . $response . "\n", FILE_APPEND);
 echo $response;
 ?>
