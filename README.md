@@ -3,6 +3,8 @@ WhatSNiff
 
 A tiny PHP mitm proxy to retrieve your WhatsApp password during registration.
 
+2013-04-24: Windows users should use MissVenom instead for now: https://github.com/shirioko/MissVenom
+
 I've tested it only on Windows and Android, but it should work on other platforms as well.
 
 REQUIRES ROOT ON ANDROID DEVICE (you'll be editing the hosts file)
