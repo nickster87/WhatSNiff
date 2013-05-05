@@ -1,13 +1,14 @@
 <?php
 //whatsapp proxy for v.whatsapp.net/v2/exist
 $url = "https://v.whatsapp.net/v2/exist?" . $_SERVER["QUERY_STRING"];
+$agent = $_SERVER['HTTP_USER_AGENT'];
 
 // Configure the connection.
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 curl_setopt($ch, CURLOPT_HEADER, 0);
-curl_setopt($ch, CURLOPT_USERAGENT, "WhatsApp/2.4.7 S40Version/14.26 Device/Nokia302");
+curl_setopt($ch, CURLOPT_USERAGENT, $agent);
 curl_setopt($ch, CURLOPT_HTTPHEADER, array('Accept: text/json'));
 // This makes CURL accept any peer!
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
@@ -18,6 +19,6 @@ $response = curl_exec($ch);
 // Close the connection.
 curl_close($ch);
 
-file_put_contents("exist.log", "REQUEST: $url\nRESPONSE: " . $response . "\n", FILE_APPEND);
+file_put_contents("exist.log", "USER AGENT: $agent\r\nREQUEST: $url\r\nRESPONSE: " . $response . "\r\n", FILE_APPEND);
 echo $response;
 ?>
